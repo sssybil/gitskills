@@ -1,0 +1,29 @@
+/Users/tusm/learngit
+
+command+shift+T 代表的是转为纯文本格式
+
+git diff readme.txt查看修改内容的命令
+
+1.初始化一个Git仓库，使用git init命令。
+添加文件到Git仓库，分两步：
+•	第一步，使用命令git add <file>，注意，可反复多次使用，添加多个文件；$ git commit -m "wrote a readme file"
+•	第二步，使用命令git commit，完成。
+
+2.要随时掌握工作区的状态，使用git status命令。
+•	如果git status告诉你有文件被修改过，用git diff可以查看修改内容。
+3. HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset --hard commit_id。
+•	穿梭前，用git log可以查看提交历史，以便确定要回退到哪个版本。
+•	要重返未来，用git reflog查看命令历史，以便确定要回到未来的哪个版本。
+将本地文件推送到远程仓库
+$ git push -u origin master
+
+defaults write com.apple.finder AppleShowAllFiles -boolean false ; killall Finder
+在此隐藏文件
+
+git remote remove origin 取消原有关联
+
+要克隆一个仓库，首先必须知道仓库的地址，然后使用git clone命令克隆。
+
+Git支持多种协议，包括https，但通过ssh支持的原生git协议速度最快。
+
+Creating a new branch is quick.
